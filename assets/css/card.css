@@ -76,11 +76,11 @@
 }
 
 .card:hover .card__background{
-  transform: scale(1.05) translateZ(0);
+  transform: scale(1.10) translateZ(0);
 }
 
 .card-grid:hover > .card:not(:hover) .card__background{
-  filter: brightness(0.5) blur(10px);
+  filter: brightness(0.4) blur(2px);
 }
 
 .card__content{

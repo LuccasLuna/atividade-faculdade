@@ -31,7 +31,7 @@ header {
 .header-tittle h1 {
   font-size: 10rem;
   padding-bottom: .7rem;
-  background: -webkit-linear-gradient(45deg, #bdca41, #33d81d,  #295e46);
+  background: -webkit-linear-gradient(45deg, #bdca41, #33d81d ,  #09a760);
   background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -108,7 +108,17 @@ ul {
 li {
   list-style: none;
   font-size: 1.2rem;
-  
+}
+
+li a {
+  text-decoration: none;
+  color: #FFF;
+  border-bottom: 2px solid transparent;
+  transition: .5s ease-in-out;
+}
+
+li a:hover {
+  border-bottom: 2px solid #FFF;
 }
 
 .nav-bar img {
@@ -118,6 +128,7 @@ li {
 main {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 article {

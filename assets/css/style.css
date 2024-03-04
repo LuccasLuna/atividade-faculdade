@@ -31,13 +31,26 @@ header {
 .header-tittle h1 {
   font-size: 10rem;
   padding-bottom: .7rem;
-  background: -webkit-linear-gradient(45deg, #bdca41, #33d81d ,  #09a760);
-  background-clip: inherit;
-  -webkit-background-clip: text;
+  background-size: 200%;
+  /* background-image: -webkit-linear-gradient(45deg, #bdca41, #33d81d ,  #09a760); */
+  background-image: linear-gradient(45deg, #bdca41, #33d81d, #17ee94, #33d81d, #bdca41);
+   background-clip: text;
+ /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px transparent; 
-  transition: .2s ease-in-out;
+  /* transition: .2s ease-in-out; */
+  animation: textAnimation 10s ease infinite;
 }
+
+@keyframes textAnimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
 .header-tittle h1:hover {
   background: transparent;
   -webkit-text-stroke: 2px #FFF; 
@@ -161,7 +174,7 @@ article p {
   height: 50%;
 }
 .marketing div:first-child {
-  background-color: rgb(110, 158, 77);
+  background-color: rgb(123, 167, 66);
   width: 100%;
   height: 50%;
 }
